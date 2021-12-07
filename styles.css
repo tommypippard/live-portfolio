@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+
+:root {
+  --black: #071013;
+  --color-black-darker: hsl(var(--black), calc(var(--1) - 5%));
+  --grey: #a2aebb;
+  --white: #dfe0e2;
+  --blue: #23b5d3;
+  --light-blue: #75abbc;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+  color: var(--white);
+  background-color: var(--black);
+  margin: 0;
+  background-image: url(blob-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: bckanimation 5s infinite ease-in-out;
+}
+
+@keyframes bckanimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  20% {
+    background-postion: 5% 10%;
+  }
+
+  40% {
+    background-position: 10% 15%;
+  }
+}
+
+.head-container {
+  padding-top: 11%;
+  padding-left: 5%;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 6rem;
+  width: 60%;
+  line-height: 85%;
+  margin-bottom: 0;
+}
+
+.sub-head {
+  font-weight: lighter;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.social-nav {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.app-link {
+  font-size: 0.9vw;
+  color: var(--blue);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.social-list {
+  display: flex;
+  width: 60%;
+  margin-top: 2%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.social-button {
+  border: none;
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--blue);
+  outline: none;
+  cursor: pointer;
+}
+
+.social-button:hover {
+  color: var(--light-blue);
+}
+
+.about-me {
+  margin-top: 5%;
+  width: 70%;
+}
+
+.head-img {
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  margin: 0;
+}
+
+img {
+  border-radius: 30px;
+  box-shadow: 0px 0px 32px 10px rgba(7, 16, 19, 0.68);
+  width: 100%;
+  height: auto;
+  min-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.column1 {
+  flex: 70%;
+  margin-right: 5%;
+}
+
+.column2 {
+  flex: 30%;
+}
+
+.project-heading {
+  display: flex;
+  font-size: 2rem;
+}
+
+i {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h3 {
+  padding: 0px 10px 0px 10px;
+  font-size: 2rem;
+  margin: 20px 0px 20px 0px;
+}
+
+.projects {
+  background-color: rgba(34, 34, 34, 0.521);
+  padding: 5%;
+  border-radius: 45px;
+  margin-top: 2%;
+}
+
+.project-content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.pro-image {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.app-link {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pro-text {
+  width: 50%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.technical-heading {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:active {
+  background-color: var(--light-blue);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(34, 34, 34, 0.521);
+  border-radius: 45px;
+  padding-left: 10px;
+  width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(7, 16, 19, 0.68);
+  z-index: 1;
+  padding: 40px;
+  margin-top: 35px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.bottom-container {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 50%;
+  background-color: rgba(34, 34, 34, 0.521);
+  padding: 5%;
+  border-radius: 45px;
+  display: flex;
+}
+
+.bottom-img {
+  height: 300px;
+  width: 200px;
+}
+
+.bottom-content {
+  padding-left: 5%;
+}
+
+.insta-link {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.email-link {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+h5 {
+  margin: 0 0 5% 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bottom-text {
+  font-size: 1rem;
+}
+
+.client-container {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 90%;
+  background-color: rgba(34, 34, 34, 0.521);
+  padding: 5%;
+  border-radius: 45px;
+}
+
+.client-grid {
+  width: 100%;
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 20px;
+}
+
+h6 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 5% 0 5% 0;
+}
+
+@media screen and (max-width: 785px) {
+  .head-container {
+    width: 100vh;
+  }
+
+  .heading {
+    width: 50%;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .head-img {
+    display: none;
+  }
+
+  .sub-head {
+    width: 50%;
+  }
+
+  .social-nav {
+    width: 100%;
+  }
+
+  .about-me {
+    width: 50%;
+  }
+
+  .container {
+    width: 100vh;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .projects {
+    padding: 10% 20% 10% 10%;
+  }
+
+  .project-content {
+    display: block;
+    margin-left: 5%;
+  }
+
+  .pro-text {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .column1 {
+    width: 100%;
+  }
+
+  .column2 {
+    width: 100%;
+  }
+
+  .bottom-container {
+    width: 55%;
+    display: block;
+    margin: 5% 0 5% 0;
+  }
+
+  .client-container {
+    width: 55%;
+    margin: 5% 0 5% 0;
+  }
+
+  h5 {
+    margin: 5% 0 5% 0;
+  }
+
+  h6 {
+    margin: 5%;
+  }
+
+  .client-grid {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bottom-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90vh;
+    margin-left: 5%;
+  }
+
+  .head-container {
+    padding-top: 0;
+  }
+
+  .head-img {
+    display: none;
+  }
+
+  .bottom-container {
+    width: 50vh;
+    display: block;
+  }
+
+  .client-grid {
+    display: block;
+  }
+}
